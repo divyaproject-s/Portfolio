@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Divya | Full Stack Developer</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+  <div class="container">
+    <a class="navbar-brand">Divya</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Divya</span></h1>
+    <h3 id="typing"></h3>
+    <p>Building beautiful websites & powerful applications</p>
+    <a href="#projects" class="btn-glow">View My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section container">
+  <h2>About Me</h2>
+  <p>
+    I'm Divya, MCA student and full stack developer.  
+    I specialize in Web Development, Python, Blockchain DApps and UI Design.
+    I completed professional web designing internship and I love building digital products.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section-dark">
+  <div class="container">
+    <h2>My Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="skill-card">HTML, CSS, Bootstrap</div></div>
+      <div class="col-md-4"><div class="skill-card">JavaScript & React</div></div>
+      <div class="col-md-4"><div class="skill-card">Python & Django</div></div>
+      <div class="col-md-4"><div class="skill-card">SQL & Databases</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section container">
+  <h2>Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4>Coffee DApp</h4>
+        <p>Blockchain based payment application</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4>Pumpkin seed estimation</h4>
+        <p>An AI-based computer vision system that predicts the number of seeds inside a pumpkin without cutting it open.m</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4>Online Grocery Ordering System</h4>
+        <p>A full-stack web application that allows users to order groceries online with cart, checkout, and admin management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-dark text-center">
+  <h2>Let's Work Together</h2>
+  <p>Email: divya@gmail.com</p>
+  <p>Phone: +91 9876543210</p>
+  <button onclick="showMsg()" class="btn-glow">Send Message</button>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
