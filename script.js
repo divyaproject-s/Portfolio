@@ -1,4 +1,4 @@
-let words = ["Full Stack Developer", "Web Designer", "Python Developer", "Blockchain Developer"];
+let words = ["Full Stack Developer", "Web Designer", "Python Developer"];
 let i = 0;
 let j = 0;
 let current = "";
