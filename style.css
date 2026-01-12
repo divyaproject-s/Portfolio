@@ -13,7 +13,7 @@ body{
 
 /* Hero */
 .hero{
-    height:50vh;
+    height:70vh; /* smaller banner */
     background: linear-gradient(120deg,#0f0c29,#302b63,#24243e);
     display:flex;
     align-items:center;
@@ -42,11 +42,11 @@ body{
 
 /* Sections */
 .section{
-    padding:100px 0;
+    padding:80px 0;
 }
 
 .section-dark{
-    padding:100px 0;
+    padding:80px 0;
     background:#111;
 }
 
@@ -76,4 +76,17 @@ body{
 .project-card:hover{
     transform:scale(1.05);
     box-shadow:0 0 20px #00f7ff;
+}
+
+/* Social Media Icons */
+.social-icons a{
+    color:#00f7ff;
+    font-size:30px;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+    transform:scale(1.3);
 }
