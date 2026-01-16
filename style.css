@@ -1,7 +1,6 @@
 body {
-  background:#0a0a0a;
-  color:white;
-  scroll-behavior:smooth;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color:#222;
   font-family: 'Segoe UI', sans-serif;
 }
 
