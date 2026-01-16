@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Divya | Full Stack Developer</title>
+  <meta charset="UTF-8">
+  <title>Divya | Full Stack Developer</title>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Font Awesome for icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top glass-nav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
   <div class="container">
-    <a class="navbar-brand">Divya</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+    <a class="navbar-brand fw-bold">Divya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div id="menu" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
         <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -38,8 +41,9 @@
   <div class="hero-content">
     <h1>Hi, I'm <span>Divya</span></h1>
     <h3 id="typing"></h3>
-    <p>Building beautiful websites & powerful applications</p>
+    <p>Full Stack Developer | MCA Student | Python Enthusiast</p>
     <a href="#projects" class="btn-glow">View My Work</a>
+    <a href="DIVYA.pdf" class="btn-glow ms-3" download>Download Resume</a>
   </div>
 </section>
 
@@ -47,71 +51,125 @@
 <section id="about" class="section container">
   <h2>About Me</h2>
   <p>
-    I'm Divya, MCA student and full stack developer.  
-    I specialize in Web Development, Python, Blockchain DApps, and UI Design.
-    I completed a professional web designing internship and I love building digital products.
+    I am a Computer Science graduate (B.Sc) and currently pursuing MCA at Manonmaniam Sundaranar University.  
+    Passionate about building web applications, exploring Python, MERN stack, and creating impactful digital solutions.
   </p>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="section-dark">
+<!-- Work Experience -->
+<section id="experience" class="section-dark">
   <div class="container">
-    <h2>My Skills</h2>
-    <div class="row g-4 mt-3">
-      <div class="col-md-4"><div class="skill-card">HTML, CSS, Bootstrap</div></div>
-      <div class="col-md-4"><div class="skill-card">JavaScript & React</div></div>
-      <div class="col-md-4"><div class="skill-card">Python & Django</div></div>
-      <div class="col-md-4"><div class="skill-card">SQL & Databases</div></div>
+    <h2>Work Experience</h2>
+    <div class="exp-card">
+      <h4>Vetri IT Systems - Python Full Stack Developer</h4>
+      <p><i>May 2025 - June 2025</i></p>
+      <ul>
+        <li>Developed a Constructor Website as a real-time project</li>
+        <li>Frontend: HTML, CSS, JavaScript</li>
+        <li>Backend: Python (Django/Flask)</li>
+        <li>Database: MySQL</li>
+      </ul>
     </div>
+    <div class="exp-card">
+      <h4>Intel Internship - Basics of Web Designing</h4>
+      <p><i>May 2023</i></p>
+      <ul>
+        <li>Designed responsive web pages using HTML & CSS</li>
+        <li>Learned web layout, styling, and UI basics</li>
+        <li>Applied best practices in web design</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section container">
+  <h2>Skills</h2>
+  <div class="row g-4 mt-3">
+    <div class="col-md-4"><div class="skill-card">Python, Java</div></div>
+    <div class="col-md-4"><div class="skill-card">Django, MERN Stack</div></div>
+    <div class="col-md-4"><div class="skill-card">HTML, CSS, JavaScript, React.js</div></div>
+    <div class="col-md-4"><div class="skill-card">MySQL, MongoDB</div></div>
+    <div class="col-md-4"><div class="skill-card">Git, GitHub, VS Code</div></div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section-dark">
+  <div class="container">
+    <h2>Education</h2>
+    <table class="table table-dark table-striped mt-3">
+      <tr>
+        <td>2024 - 2026</td>
+        <td>MCA - Manonmaniam Sundaranar University, Tirunelveli</td>
+        <td>Expected Graduation: 2026</td>
+      </tr>
+      <tr>
+        <td>2021 - 2024</td>
+        <td>B.Sc Computer Science - Sri Parasakthi College for Women, Courtallam</td>
+        <td>Graduated with 76%</td>
+      </tr>
+    </table>
   </div>
 </section>
 
 <!-- Projects -->
 <section id="projects" class="section container">
-  <h2>My Projects</h2>
+  <h2>Projects</h2>
   <div class="row g-4 mt-3">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="project-card">
-        <h4>☕ Coffee DApp</h4>
-        <p>Blockchain based payment application</p>
-        <p><b>Tech:</b> Solidity, Web3, React</p>
+        <h4>🎃 Estimating the Pumpkin Seed</h4>
+        <p><i>Jul 2025 - Nov 2025</i></p>
+        <ul>
+          <li>Web app to estimate pumpkin seed count without cutting</li>
+          <li>Backend: Django</li>
+          <li>Frontend: HTML, CSS, JavaScript</li>
+        </ul>
       </div>
     </div>
-
-    <div class="col-md-4">
-      <div class="project-card">
-        <h4>🎃 Pumpkin Seed Estimation</h4>
-        <p>An AI-based computer vision system that predicts the number of seeds inside a pumpkin without cutting it open.</p>
-        <p><b>Tech:</b> Python, OpenCV, Machine Learning</p>
-      </div>
-    </div>
-
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="project-card">
         <h4>🛒 Online Grocery Ordering System</h4>
-        <p>A full-stack web application for ordering groceries online with cart, checkout, and admin management.</p>
-        <p><b>Tech:</b> HTML, CSS, JavaScript, Django, SQL</p>
+        <p><i>Jan 2024 - Apr 2024</i></p>
+        <ul>
+          <li>Built using MERN stack (MongoDB, Express.js, React.js, Node.js)</li>
+          <li>Features: User login, product listing, cart, order management</li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" class="section-dark">
+  <div class="container">
+    <h2>Certificates</h2>
+    <ul class="list-group mt-3">
+      <li class="list-group-item">Data Analytics - Novitech R&D Pvt Ltd</li>
+      <li class="list-group-item">Enhancing Soft Skills and Personality - NPTEL (Feb - Apr 2025)</li>
+      <li class="list-group-item">The Science of Happiness and Wellbeing - NPTEL (Aug - Oct 2025)</li>
+    </ul>
   </div>
 </section>
 
 <!-- Contact -->
 <section id="contact" class="section-dark text-center">
   <h2>Let's Work Together</h2>
-  <p>Email: divyasubramanian1103@gmail.com</p>
+  <p>Email: divyasubramnian1103@gmail.com</p>
   <p>Phone: +91 9080970352</p>
+  <p>Location: Tenkasi</p>
 
-  <!-- Social Media Icons -->
   <div class="social-icons mt-4">
-    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:divyasubramanian1103@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/divyasubramanian1103" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/divya" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:divyasubramnian1103@gmail.com"><i class="fas fa-envelope"></i></a>
   </div>
 
   <button onclick="showMsg()" class="btn-glow mt-4">Send Message</button>
 </section>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
