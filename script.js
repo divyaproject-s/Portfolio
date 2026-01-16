@@ -1,37 +1,26 @@
-// Typing Effect
-let words = [
-  "Full Stack Developer",
-  "Web Designer",
-  "Python Developer",
-  "Blockchain Developer"
-];
+let words = ["Full Stack Developer", "Python Developer", "Web Designer"];
 let i = 0, j = 0;
-let current = "";
 let isDeleting = false;
 
 function typeEffect() {
-  if (i >= words.length) i = 0;
-  current = words[i];
+  let text = words[i];
+  document.getElementById("typing").innerHTML =
+    text.substring(0, j);
 
   if (!isDeleting) {
-    document.getElementById("typing").innerHTML = current.substring(0, j++);
-    if (j === current.length) {
+    j++;
+    if (j === text.length + 1) {
       isDeleting = true;
-      setTimeout(typeEffect, 1500); // pause before deleting
+      setTimeout(typeEffect, 1000);
       return;
     }
   } else {
-    document.getElementById("typing").innerHTML = current.substring(0, j--);
+    j--;
     if (j === 0) {
       isDeleting = false;
-      i++;
+      i = (i + 1) % words.length;
     }
   }
   setTimeout(typeEffect, 120);
 }
 typeEffect();
-
-// Contact Button
-function showMsg() {
-  alert("Thank you Divya! I will contact you soon 🚀");
-}
