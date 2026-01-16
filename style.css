@@ -1,13 +1,32 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg,#0f172a,#020617);
+  background: linear-gradient(135deg,#020617,#0f172a);
   color: #e5e7eb;
+}
+
+/* NAVBAR */
+.custom-nav {
+  background: rgba(2,6,23,0.85);
+  backdrop-filter: blur(10px);
+}
+
+.custom-nav .nav-link {
+  color: #e5e7eb;
+  margin: 0 10px;
+}
+
+.nav-btn {
+  background: #38bdf8;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  height: 40vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,99 +37,49 @@ body {
   color: #38bdf8;
 }
 
-.hero-buttons {
-  margin-top: 25px;
-}
-
-/* BUTTONS */
-.btn-glow {
-  padding: 12px 28px;
-  background: linear-gradient(135deg,#38bdf8,#6366f1);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 0 25px rgba(56,189,248,0.6);
-  margin: 5px;
-}
-
-.btn-outline {
-  padding: 12px 28px;
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
-  border-radius: 30px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.btn-outline:hover {
-  background: #38bdf8;
-  color: black;
-}
-
 /* SECTIONS */
 .section {
-  padding: 80px 0;
+  padding: 90px 0;
+}
+
+.section-dark {
+  padding: 90px 0;
+  background: #020617;
 }
 
 .title {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 32px;
+}
+
+/* INTERNSHIP */
+.intern-card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
 }
 
 /* SKILLS */
-.skills-section {
-  background: linear-gradient(135deg,#020617,#020617);
-}
-
 .skill-card {
   background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(15px);
+  padding: 25px;
   border-radius: 20px;
-  padding: 30px;
-  transition: 0.4s;
 }
 
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(56,189,248,0.4);
-}
-
-.skill-card h4 {
-  color: #38bdf8;
-}
-
-.tags span {
+.skill-card span {
   display: inline-block;
   margin: 8px;
-  padding: 8px 18px;
-  background: linear-gradient(135deg,#38bdf8,#6366f1);
+  padding: 6px 16px;
+  background: #38bdf8;
+  color: black;
   border-radius: 20px;
-  font-size: 14px;
 }
 
 /* PROJECTS */
 .project-card {
   background: rgba(255,255,255,0.08);
-  padding: 30px;
+  padding: 25px;
   border-radius: 20px;
-  transition: 0.4s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(56,189,248,0.4);
-}
-
-/* CONTACT */
-.contact {
-  padding: 70px 0;
-  text-align: center;
-  background: #020617;
-}
-
-.social-icons a {
-  font-size: 28px;
-  margin: 0 15px;
-  color: #38bdf8;
+  margin-bottom: 20px;
 }
