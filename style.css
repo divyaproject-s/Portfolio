@@ -14,7 +14,7 @@ body {
 
 /* Hero Section */
 .hero {
-  height:70vh;
+  height:40vh;
   background: linear-gradient(120deg,#ff6a88,#ff99ac,#6a11cb,#2575fc);
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
