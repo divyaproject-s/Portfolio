@@ -1,85 +1,73 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg,#020617,#0f172a);
-  color: #e5e7eb;
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#020617;
+  color:#e5e7eb;
 }
 
 /* NAVBAR */
-.custom-nav {
-  background: rgba(2,6,23,0.85);
-  backdrop-filter: blur(10px);
+.main-nav{
+  background:#020617;
+}
+.main-nav .nav-link{color:#e5e7eb;margin:0 10px;}
+.nav-btn{
+  background:#38bdf8;
+  padding:8px 18px;
+  border-radius:20px;
+  color:black;
+  text-decoration:none;
 }
 
-.custom-nav .nav-link {
-  color: #e5e7eb;
-  margin: 0 10px;
+/* BANNER */
+.banner{
+  height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
-
-.nav-btn {
-  background: #38bdf8;
-  padding: 8px 18px;
-  border-radius: 20px;
-  color: black;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero span {
-  color: #38bdf8;
+.btn-main{
+  background:#38bdf8;
+  padding:12px 28px;
+  border-radius:30px;
+  color:black;
+  text-decoration:none;
 }
 
 /* SECTIONS */
-.section {
-  padding: 90px 0;
-}
-
-.section-dark {
-  padding: 90px 0;
-  background: #020617;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 50px;
-}
+.section{padding:90px 0;}
+.section-dark{padding:90px 0;background:#020617;}
+.title{text-align:center;margin-bottom:50px;}
 
 /* INTERNSHIP */
-.intern-card {
-  background: rgba(255,255,255,0.08);
-  padding: 25px;
-  border-radius: 20px;
-  margin-bottom: 25px;
+.intern-box{
+  background:rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:25px;
 }
 
 /* SKILLS */
-.skill-card {
-  background: rgba(255,255,255,0.08);
-  padding: 25px;
-  border-radius: 20px;
-}
-
-.skill-card span {
-  display: inline-block;
-  margin: 8px;
-  padding: 6px 16px;
-  background: #38bdf8;
-  color: black;
-  border-radius: 20px;
+.skill-box{
+  background:#38bdf8;
+  color:black;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  font-weight:bold;
 }
 
 /* PROJECTS */
-.project-card {
-  background: rgba(255,255,255,0.08);
-  padding: 25px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+.project-box{
+  background:rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:25px;
+}
+
+/* SOCIAL */
+.social-icons a{
+  font-size:28px;
+  margin:0 15px;
+  color:#38bdf8;
 }
