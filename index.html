@@ -6,35 +6,30 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top main-nav">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Divya</a>
+    <a class="navbar-brand fw-bold text-white">Divya</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div id="menu" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#internship" class="nav-link">Internship</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        <li class="nav-item">
-          <a href="DIVYA.pdf" download class="nav-btn">Download CV</a>
-        </li>
+        <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"><a href="#internship" class="nav-link text-white">Internship</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- BANNER -->
-<section id="home" class="banner">
+<section id="home" class="hero">
   <div class="container text-center">
     <h1>Divya S</h1>
     <h4>Python Full Stack Developer | MCA Student</h4>
@@ -43,75 +38,154 @@
   </div>
 </section>
 
-<!-- INTERNSHIP -->
-<section id="internship" class="section">
-  <div class="container">
-    <h2 class="title">Internship Experience</h2>
-
-    <div class="intern-box">
-      <h4>Python Full Stack Developer Intern</h4>
-      <p><b>Vetri IT Systems</b> | May 2025 – June 2025</p>
-      <ul>
-        <li>Developed a constructor website as real-time project</li>
-        <li>Frontend using HTML, CSS, JavaScript</li>
-        <li>Backend using Python with Django</li>
-        <li>Database: MySQL</li>
-      </ul>
-    </div>
-
-    <div class="intern-box">
-      <h4>Web Designing Intern</h4>
-      <p><b>Intel Internship</b> | May 2023</p>
-      <ul>
-        <li>Designed responsive web pages using HTML & CSS</li>
-        <li>Learned UI design and layout principles</li>
-      </ul>
-    </div>
-  </div>
+<!-- Internship Section -->
+ 
+<section id="internship" >
+        <br><br><h2><center>Internship Experience</center></h2><br>
+        <div class="internship-section">
+            <div class="internship-card">
+                <h3>Python Full Stack Developer Intern</h3>
+                <span>Vetri IT Systems | May 2025 – June 2025</span>
+                <ul>
+                    <li>Developed a constructor website as real-time project</li>
+                    <li>Frontend: HTML, CSS, JavaScript</li>
+                    <li>Backend: Python (Django)</li>
+                    <li>Database: MySQL</li>
+                </ul>
+            </div>
+            <div class="internship-card">
+                <h3>Web Designing Intern</h3>
+                <span>Intel Internship | May 2023</span>
+                <ul>
+                    <li>Designed responsive web pages using HTML & CSS</li>
+                    <li>Learned UI design principles</li>
+                </ul>
+            </div>
+        </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="section-dark">
   <div class="container">
     <h2 class="title">Skill Set</h2>
 
     <div class="row g-4">
-      <div class="col-md-3"><div class="skill-box">Frontend<br><small>HTML, CSS, JavaScript, Bootstrap, React</small></div></div>
-      <div class="col-md-3"><div class="skill-box">Backend<br><small>Python, Django, Flask, Java</small></div></div>
-      <div class="col-md-3"><div class="skill-box">Database<br><small>MySQL, MongoDB</small></div></div>
-      <div class="col-md-3"><div class="skill-box">Tools<br><small>Git, GitHub, VS Code</small></div></div>
+      <div class="col-md-3">
+        <div class="skill-box">
+          <h5>Frontend</h5>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="skill-box">
+          <h5>Backend</h5>
+          <p>Python, Django</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="skill-box">
+          <h5>Database</h5>
+          <p>MySQL, MongoDB</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="skill-box">
+          <h5>Tools</h5>
+          <p>Git, GitHub, VS Code</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="title">Projects</h2>
+  <div class="projects-grid">
 
-    <div class="project-box">
-      <h4>🎃 Pumpkin Seed Estimation</h4>
-      <p>AI based system to estimate seed count without cutting the pumpkin.</p>
+    <div class="project-card">
+      
+      <div class="project-content">
+        <!-- <img src="images/pumpkin.jpg" alt="Pumpkin Project"> -->
+        <h3>🎃 Pumpkin Seed Estimation</h3>
+        <p>AI system to predict pumpkin seed count using computer vision and machine learning.</p>
+      </div>
     </div>
 
-    <div class="project-box">
-      <h4>🛒 Online Grocery Ordering System</h4>
-      <p>Full stack MERN web app with cart and order management.</p>
+    <div class="project-card">
+      
+      <div class="project-content">
+        <!-- <img src="images/grocery.jpg" alt="Grocery Project"> -->
+        <h3>🛒 Online Grocery Ordering System</h3>
+        <p>Full stack MERN web application for online grocery shopping with cart and order management.</p>
+      </div>
     </div>
+
+    <div class="project-card">
+      
+      <div class="project-content">
+        <!-- <img src="images/portfolio.jpg" alt="Portfolio Project"> -->
+        <h3>🌐 Personal Portfolio Website</h3>
+        <p>Responsive portfolio website built using HTML, CSS and JavaScript.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section-dark text-center">
-  <h2 class="title">Contact</h2>
-  <p>📍 Tenkasi, Tamil Nadu</p>
-  <p>📞 +91 9080970352</p>
 
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/divyasubramanian1103" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/divyaproject-s" target="_blank"><i class="fab fa-github"></i></a>
+
+<section id="contact" class="contact-section">
+  <h2>Let's Connect</h2>
+  <p class="contact-sub">Feel free to reach out for projects, internships or collaborations</p>
+
+  <div class="contact-box">
+
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Location</h4>
+      <p>Tenkasi, Tamil Nadu</p>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <h4>Phone</h4>
+      <p>+91 90809 70352</p>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p>divyasubramanian1103@gmail.com</p>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-linkedin"></i>
+      <h4>LinkedIn</h4>
+      <a href="https://www.linkedin.com/in/divyasubramanian1103" target="_blank">View Profile</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-github"></i>
+      <h4>GitHub</h4>
+      <a href="https://github.com/divyaproject-s" target="_blank">View Profile</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-whatsapp"></i>
+      <h4>WhatsApp</h4>
+      <a href="https://wa.me/919080970352?text=Hi%20Divya,%20I%20saw%20your%20portfolio%20and%20I%20want%20to%20connect%20with%20you!" target="_blank">
+        Chat Now
+      </a>
+    </div>
+
   </div>
 </section>
+
+
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
