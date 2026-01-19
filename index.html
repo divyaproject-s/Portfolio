@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <title>Divya | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">Divya</div>
   <ul>
+    <li><a href="#home">Home</a></li>
     <li><a href="#internship">Internship</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -21,11 +24,15 @@
 
 <div class="container">
 
-  <!-- LEFT SIDEBAR (UNCHANGED) -->
+  <!-- LEFT SIDEBAR -->
   <aside class="sidebar">
     <img src="profile.jpg" alt="Profile">
     <h2>Divya S</h2>
-    <p class="role">Python Full Stack Developer</p>
+
+    <!-- <p class="role">Python Full Stack Developer</p> -->
+
+    <span id="typing"></span>
+  
 
     <div class="info">
       <p><i class="fas fa-location-dot"></i> Tenkasi, Tamil Nadu</p>
@@ -33,17 +40,20 @@
       <p><i class="fas fa-envelope"></i> divyasubramanian1103@gmail.com</p>
     </div>
 
-    <button class="cv-btn dark">Download CV</button>
+    <a href="DIVYA.pdf" download class="download-btn">
+      Download CV
+    </a>
   </aside>
 
   <!-- RIGHT CONTENT -->
   <main class="content">
-    <section id="about" class="card">
-      <h2>About Me</h2><br
-      <p>
+
+    <section id="home" class="card">
+      <h2 class="section-title">About Me</h2><br>
+      <h4><p>
         I am a Python Full Stack Developer and MCA student with hands-on
         experience in Django, frontend technologies and database management.
-      </p>
+      </p></h4>
     </section>
 
     <!-- INTERNSHIP -->
@@ -105,12 +115,12 @@
       <div class="project-grid">
         <div class="project-card">
           <h4>🎃 Pumpkin Seed Estimation</h4>
-          <p>Computer vision based project using Python & OpenCV to estimate pumpkin seeds.</p>
+          <p>Computer vision based project using Python & OpenCV.</p>
         </div>
 
         <div class="project-card">
           <h4>🛒 Django E-Commerce Website</h4>
-          <p>Complete shopping site with login, cart, wishlist & admin panel.</p>
+          <p>Complete shopping site with cart, wishlist & admin panel.</p>
         </div>
       </div>
     </section>
@@ -141,13 +151,26 @@
         <div class="contact-card">
           <i class="fab fa-linkedin"></i>
           <h4>LinkedIn</h4>
-          <p>View Profile</p>
+          <a href="https://www.linkedin.com/in/divyasubramanian1103" target="_blank">
+            View Profile
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <h4>GitHub</h4>
+          <a href="https://github.com/divyaproject-s" target="_blank">
+            View Profile
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 </div>
+
+<!-- ✅ JS ALWAYS AT END -->
+<script src="script.js"></script>
 
 </body>
 </html>
