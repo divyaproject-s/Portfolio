@@ -8,22 +8,24 @@
 
 /* ===== NAVBAR ===== */
 .navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, hamburger right */
+  align-items: center;            /* vertical center */
+  padding: 18px 40px;
   position: sticky;
   top: 0;
   z-index: 1000;
   background: linear-gradient(90deg, #6a7de8, #7f3fd4);
-  padding: 18px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
+/* Logo */
 .navbar .logo {
   color: white;
   font-size: 22px;
   font-weight: bold;
 }
 
+/* Menu links */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -36,6 +38,7 @@
   text-decoration: none;
 }
 
+/* CV Button */
 .cv-btn {
   padding: 8px 18px;
   border-radius: 20px;
@@ -46,7 +49,7 @@
   font-weight: 600;
 }
 
-/* Hamburger icon (hidden desktop) */
+/* Hamburger icon */
 .hamburger {
   display: none;
   font-size: 24px;
@@ -151,7 +154,7 @@ section {
   padding-left: 18px;
 }
 
-/* ===== SKILLS ===== */
+/* ===== SKILLS & CONTACT ===== */
 .gradient-section {
   background: linear-gradient(135deg, #6a7de8, #7f3fd4);
   padding: 60px;
@@ -223,64 +226,10 @@ section {
     padding: 20px;
   }
 
+  /* Navbar mobile */
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 15px 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .card-grid,
-  .project-grid,
-  .skill-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gradient-section {
-    padding: 30px;
-    border-radius: 15px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-
-  .sidebar img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between; /* logo left, hamburger right */
-  align-items: center;            /* vertical center */
-  padding: 18px 40px;
-  flex-wrap: nowrap;              /* prevent stacking logo & hamburger */
-}
-
-/* Hamburger hidden on desktop */
-.hamburger {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: nowrap; /* keep logo and hamburger in one line */
+    flex-wrap: nowrap; /* logo + hamburger same line */
   }
 
   .hamburger {
@@ -296,6 +245,30 @@ section {
   }
 
   .navbar.active ul {
-    display: flex;      /* show menu when hamburger clicked */
+    display: flex;      /* show menu on click */
+  }
+
+  /* Grids mobile */
+  .card-grid,
+  .project-grid,
+  .skill-grid,
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .gradient-section {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .sidebar img {
+    width: 120px;
+    height: 120px;
   }
 }
