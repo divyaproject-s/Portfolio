@@ -98,6 +98,9 @@
 section {
   margin-bottom: 70px;
 }
+section {
+  scroll-margin-top: 120px; /* navbar height */
+}
 
 .section-title {
   font-size: 32px;
