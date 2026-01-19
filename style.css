@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 .navbar {
   position: sticky;
   top: 0;
@@ -45,12 +46,20 @@
   font-weight: 600;
 }
 
-/* LAYOUT */
+/* Hamburger icon (hidden desktop) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== LAYOUT ===== */
 .container {
   display: flex;
 }
 
-/* SIDEBAR */
+/* ===== SIDEBAR ===== */
 .sidebar {
   width: 300px;
   background: white;
@@ -88,7 +97,7 @@
   margin-top: 20px;
 }
 
-/* RIGHT CONTENT */
+/* ===== RIGHT CONTENT ===== */
 .content {
   flex: 1;
   padding: 50px 60px;
@@ -97,8 +106,6 @@
 
 section {
   margin-bottom: 70px;
-}
-section {
   scroll-margin-top: 120px; /* navbar height */
 }
 
@@ -111,7 +118,7 @@ section {
   color: white;
 }
 
-/* CARDS */
+/* ===== CARDS ===== */
 .card-grid,
 .project-grid {
   display: grid;
@@ -121,20 +128,13 @@ section {
 
 .info-card,
 .project-card {
-  background: white; /* or rgba(255,255,255,0.08) for glass effect */
+  background: white;
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.08);
   transition: transform 0.3s;
-  text-align: justify; /* for text inside card */
-  /* If you want to use flex for inner elements:
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  */
+  text-align: justify;
 }
-
 
 .info-card:hover,
 .project-card:hover {
@@ -151,7 +151,7 @@ section {
   padding-left: 18px;
 }
 
-/* SKILLS */
+/* ===== SKILLS ===== */
 .gradient-section {
   background: linear-gradient(135deg, #6a7de8, #7f3fd4);
   padding: 60px;
@@ -187,8 +187,8 @@ section {
 }
 
 .contact-card p {
-  word-break: break-all;     /* ✅ email break aagum */
-  overflow-wrap: anywhere;  /* ✅ box-kulla fit aagum */
+  word-break: break-all;
+  overflow-wrap: anywhere;
   font-size: 14px;
 }
 
@@ -204,4 +204,98 @@ section {
 
 .download-btn:hover {
   background: #333;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .card-grid,
+  .project-grid,
+  .skill-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gradient-section {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .sidebar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, hamburger right */
+  align-items: center;            /* vertical center */
+  padding: 18px 40px;
+  flex-wrap: nowrap;              /* prevent stacking logo & hamburger */
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap; /* keep logo and hamburger in one line */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;      /* hide menu by default */
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar.active ul {
+    display: flex;      /* show menu when hamburger clicked */
+  }
 }

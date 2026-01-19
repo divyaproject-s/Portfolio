@@ -22,3 +22,11 @@ function typeEffect() {
   setTimeout(typeEffect, 120);
 }
 typeEffect();
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
