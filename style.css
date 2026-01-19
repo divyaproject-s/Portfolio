@@ -121,12 +121,20 @@ section {
 
 .info-card,
 .project-card {
-  background: white;
+  background: white; /* or rgba(255,255,255,0.08) for glass effect */
   padding: 30px;
   border-radius: 18px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.08);
   transition: transform 0.3s;
+  text-align: justify; /* for text inside card */
+  /* If you want to use flex for inner elements:
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  */
 }
+
 
 .info-card:hover,
 .project-card:hover {
