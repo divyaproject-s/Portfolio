@@ -249,8 +249,8 @@ section {
   }
 
   /* Grids mobile */
-  .card-grid,
-  .project-grid,
+  
+  
   .skill-grid,
   .contact-grid {
     display: grid;
